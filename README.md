@@ -28,3 +28,9 @@ npm install
 
 gulp
 ```
+
+Any errors related to **scripts being disabled** in windows, paste this in powershell
+
+```powershell
+Set-ExecutionPolicy Unrestricted -Scope Process
+```
