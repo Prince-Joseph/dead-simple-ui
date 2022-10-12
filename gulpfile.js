@@ -47,9 +47,12 @@ function uglifyJs(){
   }))
   .pipe(gulp.dest("build/assets/js"));
 };
+function browserSyncTasky(){
+ return browserSync.init({server:{baseDir: "build", },});
+}
 
 function watchFiles() {
-  browserSync.init({server:{baseDir: "build", },});
+  browserSyncTasky();
   gulp.watch(["./build/**/*.html", "./build/**/*.css", "./build/**/*.js"]).on("change", browserSync.reload);
   gulp.watch("./src/**/**/*.njk", gulp.series("nunjucks"));
   gulp.watch("./src/assets/sass/**/*.scss", gulp.series("sass"));

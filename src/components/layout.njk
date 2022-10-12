@@ -9,21 +9,9 @@
     <script src="./assets/js/main.min.js"></script>
 </head>
 <body>
-    <nav>
-    <ul>
-        <li>Home</li>
-        <li>Smthing</li>
-        <li>Odhthing</li>
-        <li>Odhthing</li>
-    </ul>
-</nav>
-    
-   <h1>
-    This is Index Page Content
-   </h1>
-
-    <h2>
-    darn footer
-</h2>
+    {% include 'navbar.njk'%}
+    {% block content%}
+    {% endblock content%}
+    {% include 'footer.njk'%}
 </body>
 </html>
