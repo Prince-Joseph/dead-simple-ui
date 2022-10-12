@@ -1,0 +1,29 @@
+{
+  "name": "dead-simple-ui",
+  "version": "1.0.0",
+  "description": "css framework to build UI components quickly ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prince-Joseph/dead-simple-ui.git"
+  },
+  "author": "S E Prince Joseph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Prince-Joseph/dead-simple-ui/issues"
+  },
+  "homepage": "https://github.com/Prince-Joseph/dead-simple-ui#readme",
+  "dependencies": {
+    "browser-sync": "^2.27.10",
+    "cli": "^1.0.1",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-css": "^0.1.0",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-purgecss": "^5.0.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}
