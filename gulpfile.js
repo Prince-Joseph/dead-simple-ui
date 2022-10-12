@@ -65,3 +65,8 @@ gulp.task("sass", compileSass);
 gulp.task("css", buildStyle);
 gulp.task("js", uglifyJs);
 gulp.task("watch", watchFiles);
+
+function defaultTask() {
+  watchFiles()
+}
+exports.default = defaultTask
