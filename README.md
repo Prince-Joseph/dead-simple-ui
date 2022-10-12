@@ -23,6 +23,7 @@ cd projects/wherever
 
 git clone https://github.com/Prince-Joseph/dead-simple-ui.git
 
+cd dead-simple-ui
 npm install
 
 gulp
