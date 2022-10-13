@@ -41,3 +41,9 @@ Any errors related to **scripts being disabled** in windows, paste this in power
 ```powershell
 Set-ExecutionPolicy Unrestricted -Scope Process
 ```
+
+Any errors related to **gulp not being recognized** in windows, paste this in powershell
+
+```powershell
+npx gulp
+```
