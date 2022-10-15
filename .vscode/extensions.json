@@ -4,6 +4,9 @@
         "okitavera.vscode-nunjucks-formatter",
         "formulahendry.auto-close-tag",
         "formulahendry.auto-rename-tag",
-        "Zignd.html-css-class-completion"
+        "zignd.html-css-class-completion",
+        "ronnidc.nunjucks",
+        "gencer.html-slim-scss-css-class-completion",
+        "Miladfathy.scss-snippet"
     ]
 }
