@@ -2,83 +2,85 @@ $primary-color: green;
 $nice-pad: 15em;
 $light: true;
 
-@if ($light == true) {
-
-    *{
-        color: black;
-        margin: 0;
-        padding: 0;
-        font-size: 16px;
-    }
-}
-@else{
-    *{
-        color:white;
-        background-color: black;
-    }
-}
-body{
-    background-color: rgba($color: pink, $alpha: 1);
+@if ($light ==true) {
+  * {
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+  }
 }
 
-.box{
-    width: $nice-pad;
-    // display: ;
-    font-size: 2em;
-    background-color:$primary-color;
+@else {
+  * {
+    color: white;
+    background-color: black;
+  }
 }
 
-.box2{
-    width: 50%;
-    // display: ;
-    font-size: 2em;
-    background-color: blue;
+body {
+  background-color: rgba($color: pink, $alpha: 1);
 }
 
-.box3{
-    font-size: 2em;
-    background-color: rgb(79, 79, 241);
+.box {
+  width: $nice-pad;
+  // display: ;
+  font-size: 2em;
+  background-color: $primary-color;
+}
+
+.box2 {
+  width: 50%;
+  // display: ;
+  font-size: 2em;
+  background-color: blue;
+}
+
+.box3 {
+  font-size: 2em;
+  background-color: rgb(79, 79, 241);
 }
 
 @media screen and (max-width:600px) {
-    .box3{
-        background-color:$primary-color;
-    }
+  .box3 {
+    background-color: $primary-color;
+  }
 }
 
 @media screen and (min-width:700px) {
-    .box3{
-        background-color:red;
-    }
-}
-
-.flex-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.flex-container :nth-child(even){
-    background-color: blue;
-}
-.sb{
-    border: 4px solid black;
+  .box3 {
     background-color: red;
-    width: 25vw;
-    margin: 2px;
+  }
 }
 
-.img-fluid{
-    width: 100%;
-    height: 200px;
-    object-fit: contain;
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.namkillsforcats{
-    background-color: teal;
-    background: url(http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/nebula_brown.png);
+.flex-container :nth-child(even) {
+  background-color: blue;
 }
 
-.namkillsforcats:hover{
-    background-color: black;
+.sb {
+  border: 4px solid black;
+  background-color: red;
+  width: 25vw;
+  margin: 2px;
+}
+
+.img-fluid {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.namkillsforcats {
+  background-color: teal;
+  background: url(http://commondatastorage.googleapis.com/codeskulptor-assets/lathrop/nebula_brown.png);
+}
+
+.namkillsforcats:hover {
+  background-color: black;
 }
