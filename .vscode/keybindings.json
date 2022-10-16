@@ -1,0 +1,101 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    // {
+    //     "key": "alt+z",
+    //     "command": "-extension.cssrem.rem-switch-px"
+    // },
+    {
+        "key": "shift+numpad_add",
+        "command": "editor.action.fontZoomIn"
+    },
+    {
+        "key": "shift+numpad_subtract",
+        "command": "editor.action.fontZoomOut"
+    },
+    // {
+    //     "key": "ctrl+shift+b",
+    //     "command": "-workbench.action.tasks.build"
+    // },
+    {
+        "key": "ctrl+shift+a a",
+        "command": "workbench.action.minimizeOtherEditors"
+    },
+    {
+        "key": "ctrl+shift+a z",
+        "command": "workbench.action.evenEditorWidths"
+    },
+    {
+        "key": "ctrl+shift+/",
+        "command": "editor.action.blockComment",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+a",
+        "command": "-editor.action.blockComment",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+a left",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "ctrl+shift+a ctrl+shift+right",
+        "command": "workbench.action.focusRightGroup"
+    },
+    {
+        "key": "ctrl+k ctrl+right",
+        "command": "-workbench.action.focusRightGroup"
+    },
+    {
+        "key": "ctrl+shift+a up",
+        "command": "workbench.action.focusAboveGroup"
+    },
+    {
+        "key": "ctrl+shift+a down",
+        "command": "workbench.action.focusBelowGroup"
+    },
+    {
+        "key": "ctrl+shift+a b",
+        "command": "workbench.action.toggleActivityBarVisibility"
+    },
+    {
+        "key": "ctrl+shift+a ctrl+b",
+        "command": "workbench.action.focusActivityBar"
+    },
+    {
+        "key": "ctrl+shift+a ctrl+shift+left",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "ctrl+shift+a right",
+        "command": "workbench.action.focusRightGroup"
+    },
+    {
+        "key": "ctrl+shift+a ctrl+shift+s",
+        "command": "workbench.view.extension.liveshare"
+    },
+    {
+        "key": "ctrl+m right",
+        "command": "workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "ctrl+alt+right",
+        "command": "-workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "ctrl+m left",
+        "command": "workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "-workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "shift+alt+t",
+        "command": "trailing-spaces.deleteTrailingSpaces"
+    },
+    {
+        "key": "ctrl+shift+a ctrl+shift+l",
+        "command": "python.enableLinting"
+    }
+]

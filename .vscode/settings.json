@@ -33,9 +33,7 @@
         "njk": "html",
         "nunjucks": "html"
     },
-    "[njk]": {
-        "breadcrumbs.showClasses": true
-    },
+  
     "cssPeek.peekFromLanguages": [
         "html",
         "django-html",
@@ -94,7 +92,19 @@
     ],
     "files.associations": {
         "*.html": "html",
-        "*.njk": "html",
-    } 
+    } ,
 
+    "[nunjucks]": {
+        "editor.suggest.showClasses": true,
+        "breadcrumbs.showClasses": true,
+        "editor.bracketPairColorization.enabled": true,
+        "editor.suggest.insertMode": "replace"
+        },
+
+    "[njk]": {
+        "editor.suggest.showClasses": true,
+        "breadcrumbs.showClasses": true,
+        "editor.bracketPairColorization.enabled": true,
+        "editor.suggest.insertMode": "replace"
+        },
 }

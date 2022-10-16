@@ -30,7 +30,7 @@ function compileSass(){
 function buildStyle() {
   return gulp
   .src("src/assets/css/**/*.css")
-  .pipe(purgecss({ content: ["build/*.html", "build/assets/js/**/*.js"] }))
+  // .pipe(purgecss({ content: ["build/*.html", "build/assets/js/**/*.js"] }))
   .pipe(rename(function (path) {
     path.basename += ".min";
     path.extname = ".css";
@@ -52,12 +52,11 @@ function browserSyncTasky(){
 }
 
 function watchFiles() {
-  browserSyncTasky();
-  gulp.watch(["./build/**/*.html", "./build/**/*.css", "./build/**/*.js"]).on("change", browserSync.reload);
-  gulp.watch("./src/**/**/*.njk", gulp.series("nunjucks"));
-  gulp.watch("./src/assets/sass/**/*.scss", gulp.series("sass"));
-  gulp.watch("./src/assets/css/**/*.css", gulp.series("css"));
-  gulp.watch("./src/assets/js/**/*.js", gulp.series("js",));
+  gulp.watch("./src/**/**/*.njk", gulp.series(gulp.parallel("nunjucks","sass"),"css","js")).on("change", browserSync.reload);
+  gulp.watch("./src/assets/sass/**/*.scss", gulp.series(gulp.parallel("nunjucks","sass"),"css","js")).on("change", browserSync.reload);
+  // gulp.watch("./src/assets/css/**/*.css", gulp.series(gulp.parallel("css")));
+  gulp.watch("./src/assets/js/**/*.js", gulp.series(gulp.parallel("js"), browserSync.reload));
+  // gulp.watch(["./build/**/*.html", "./build/**/*.css", "./build/**/*.js"]).on("change", browserSync.reload);
 }
 
 gulp.task("nunjucks", nunjucks_to_html);
@@ -67,6 +66,7 @@ gulp.task("js", uglifyJs);
 gulp.task("watch", watchFiles);
 
 function defaultTask() {
-  watchFiles()
+  browserSyncTasky();
+  watchFiles();
 }
 exports.default = defaultTask

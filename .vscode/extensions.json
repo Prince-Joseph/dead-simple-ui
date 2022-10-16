@@ -7,6 +7,7 @@
         "zignd.html-css-class-completion",
         "ronnidc.nunjucks",
         "gencer.html-slim-scss-css-class-completion",
-        "Miladfathy.scss-snippet"
+        "miladfathy.scss-snippet",
+        "shardulm94.trailing-spaces"
     ]
 }
